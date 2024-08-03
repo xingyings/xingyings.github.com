@@ -1,0 +1,147 @@
+
+<!--
+==========================================
+网站为虚构，请注意辨别。
+==========================================
+版权所有，下方链接为原作者。
+==========================================
+https://space.bilibili.com/1090378791
+==========================================
+-->
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>真理部官网</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+        }
+
+        .logo {
+            width: 100%;
+            max-width: 300px;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            background-color: #007BFF;
+            color: white;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+
+        #popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            z-index: 1;
+            text-align: center;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="logo" src="https://file.imgcc.cloud/images/2024/08/02/5da0ee360748e37a99eb59171bafab04.th.png" alt="真理部标志">
+        <form id="loginForm">
+            <label for="username">用户名:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">密码:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">登录</button>
+        </form>
+    </div>
+    <div id="popup" class="hidden">
+        <p>免责声明：此为网页快照，并不代表我方立场。用户协议详见xingying.us.kg/yhxy，继续则表示接受此协议！</p>
+        <button id="confirmButton">确定</button>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const loginForm = document.getElementById('loginForm');
+            const popup = document.getElementById('popup');
+            const confirmButton = document.getElementById('confirmButton');
+
+            loginForm.addEventListener('submit', (event) => {
+                event.preventDefault();
+                const username = document.getElementById('username').value;
+                const password = document.getElementById('password').value;
+
+                if (username === 'AL-1S' && password === 'als') {
+                    showPopup();
+                } else {
+                    alert('登录失败，请检查您的用户名和密码。');
+                }
+            });
+
+            confirmButton.addEventListener('click', () => {
+              <!-- 注意，这里是假的！！ -->
+                window.location.href = "https://space.bilibili.com/1090378791";
+              <!-- 注意，请再此后更改此网址！！ -->
+            });
+
+            function showPopup() {
+                popup.classList.remove('hidden');
+            }
+        });
+    </script>
+</body>
+</html>
+<!--
+       　  　▃▆█▇▄▖
+　 　 　 ▟◤▖　　　◥█▎
+   　 ◢◤　 ▐　　　 　▐▉
+　 ▗◤　　　▂　▗▖　　▕█▎
+　◤　▗▅▖◥▄　▀◣　　█▊
+▐　▕▎◥▖◣◤　　　　◢██
+█◣　◥▅█▀　　　　▐██◤
+▐█▙▂　　     　◢██◤
+◥██◣　　　　◢▄◤
+ 　　▀██▅▇▀
+
+
+哲学♂ 114514
+-->
